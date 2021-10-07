@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menuMain {
+  list-style: none;
+  margin: 40px 0 5px;
+  margin-top: 10px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: #100f18;
+}
+.menuMain li {display: inline-block;}
+.menuMain li:after {
+  content: "|";
+  color: #d8d6e0;
+  display: inline-block;
+  vertical-align:top;
+}
+.menuMain li:last-child:after {content: none;}
+.menuMain a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menuMain a, .menuMain a:visited {color: #d8d6e0;}
+.menuMain a.current, .menuMain a:hover{color: #eb0142;}
+.menuMain a:before,
+.menuMain a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #eb0142;
+  transition: .8s;
+}
+.menuMain a:hover:before, .menuMain .current:before {left: 0;}
+.menuMain a:hover:after, .menuMain .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menuMain {padding-top: 0;}
+.menuMain li {display: block;}
+.menuMain li:after {content: none;}
+.menuMain a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
