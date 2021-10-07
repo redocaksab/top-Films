@@ -1,0 +1,17 @@
+.nothingFound {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.filmItem {
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    padding-left: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.filmItem:hover {
+    background-color: #c3c0d8;
+}
+

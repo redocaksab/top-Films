@@ -1,0 +1,53 @@
+.filmInf {
+    background: #d8d6e0;
+    width: 45%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    padding: 7px;
+    box-shadow: 2px 2px 9px rgb(115, 103, 117);
+    display: grid;
+    grid-template-areas: 
+    "image category category"
+    "bottomcategory bottomcategory bottomcategory";
+    
+    grid-template-columns: 1fr 10fr;
+}
+
+.imageWrapper {
+    grid-area: image;
+}
+.rightWrapper {
+    grid-area: category;
+    padding-left: 7px;
+    
+}
+.bottomWrapper {
+    grid-area: bottomcategory;
+    padding-left: 7px;
+}
+
+
+.filmPoster {
+    height: auto; 
+    width: auto; 
+    max-width: 230px; 
+    max-height: 230px;
+    border-radius: 2px;
+    margin: 7px;
+}
+
+.filmTitle h2 {
+    word-wrap:break-word;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.categoryName {
+    font-weight:600;
+}
+
+.infoItem {
+    margin-bottom: 3px;
+}

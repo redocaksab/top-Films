@@ -1,0 +1,36 @@
+.searchForm {
+    position: relative;
+    max-width: 420px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.formContent input {
+    line-height: 35px;
+    border-width: 0;
+    display: block;
+    width: 100%;
+    background-color: #d8d6e0;
+    position: absolute;
+}
+.formContent input::-moz-placeholder { color: #9691ba; }
+.formContent input::-webkit-input-placeholder { color: #9691ba; }
+
+.filmList {    
+    background-color: #d8d6e0;
+    display: inline-block;
+    margin-top: 40px;
+    text-align: left;
+    overflow-y: scroll;
+    max-height: 300px;
+    width: 101%;
+    padding-top: 5px;
+}
+
+.listFilmDisabled {
+    display: none;
+}
+
+.listSearchDisabled {
+    display: none;
+}
