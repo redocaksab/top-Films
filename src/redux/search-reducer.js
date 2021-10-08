@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const SEARCH_PROCESS = "SEARCH-PROCESS";
-const CLEAR_STATE = "CLAER-STATE";
+const CLEAR_STATE = "CLEAR-STATE";
 
 let initialState = {
     films: []
@@ -34,16 +34,13 @@ function isEmpty(obj) {
 }
 
 export const getFilms = (filmTitle) => {
-
     return (dispatch) => {
         axios.get(`https://api.themoviedb.org/3/search/movie?query=${filmTitle}&api_key=f06a2e114e4b3a01ae78dd727e1d0c6e&language=en-US`)
             .then(response => {
                 if (isEmpty(response.data)) {
                     dispatch(clearState());
                 } else {
-               
                     let films = response.data.results.map((item) => ({ id: item.id, title: item.original_title }));
-
                     dispatch(setFilms(films));
                 }
 

@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import store from './redux/store';
 import SearchPageContainer from './SearchPage/SearchPageContainer';
 import FilmItemContainer from './FilmItem/FilmItemContainer';
+import Top20PageContainer from './Top20Page/Top20PageContainer';
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Provider store={store}>
         <NavBar />
         <Route path="/search" component={SearchPageContainer} />
-        <Route path="/films/:filmId" component={FilmItemContainer}/>
+        <Route path="/films/:filmId" component={FilmItemContainer} />
+        <Route path="/top20" component={Top20PageContainer} />
       </Provider>
     </BrowserRouter>
   );

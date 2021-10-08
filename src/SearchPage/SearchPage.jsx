@@ -25,7 +25,6 @@ const SearchPage = (props) => {
 
     return (
         <>
-            {/* <div className={styles.title}>Film search</div> */}
             <div className={styles.searchWrapper}>
                 <SearchForm
                     activeList={activeList}

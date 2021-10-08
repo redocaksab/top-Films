@@ -3,10 +3,10 @@ import styles from "./NavBar.module.css";
 
 const NavBar = () => {
     return (
-        <nav className={styles.topMenu}>
+        <nav>
             <ul className={styles.menuMain}>
-                <li><NavLink  to="/search">Film search</NavLink></li>
-                <li><NavLink  to="/top20">Top 20</NavLink></li>
+                <li><NavLink to="/search">Film search</NavLink></li>
+                <li><NavLink to="/top20">Top 20</NavLink></li>
             </ul>
         </nav>
     );

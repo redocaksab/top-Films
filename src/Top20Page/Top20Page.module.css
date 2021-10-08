@@ -1,0 +1,46 @@
+.topCategoryWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+.title {
+    color: #d8d6e0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.filmName {
+    color: #d8d6e0;
+}
+
+.topCategory {
+    position: relative;
+    width: fit-content;
+    margin: 0 10px 10px;
+    margin-bottom: 60px;
+    height: 120px;
+}
+
+.topCategory:hover {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+.topCategory img {
+   border-radius: 5px;
+}
+
+.poster img {
+    height: auto; 
+    width: auto; 
+    max-width: 250px; 
+    max-height: 250px;
+}
+

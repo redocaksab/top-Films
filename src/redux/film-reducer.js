@@ -19,7 +19,7 @@ const searchReducer = (state = initialState, action) => {
     }
 }
 
-const setFilmInfo = (filmInfo) => ({type: SAVE_FILM_INFO, filmInfo});
+const setFilmInfo = (filmInfo) => ({ type: SAVE_FILM_INFO, filmInfo });
 
 export const getFilmInfo = (filmId) => {
     return (dispatch) => {
@@ -30,7 +30,7 @@ export const getFilmInfo = (filmId) => {
                     status: response.data.status,
                     relese_date: response.data.release_date,
                     runtime: response.data.runtime,
-                    originalal_language: response.data.original_language,
+                    original_language: response.data.original_language,
                     overview: response.data.overview,
                     tagline: response.data.tagline,
                     poster_path: response.data.poster_path,

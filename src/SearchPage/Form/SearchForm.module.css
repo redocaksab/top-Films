@@ -13,6 +13,7 @@
     background-color: #d8d6e0;
     position: absolute;
 }
+
 .formContent input::-moz-placeholder { color: #9691ba; }
 .formContent input::-webkit-input-placeholder { color: #9691ba; }
 

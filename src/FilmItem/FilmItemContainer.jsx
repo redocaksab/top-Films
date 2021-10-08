@@ -9,7 +9,7 @@ class FilmItemContainer extends React.Component {
         this.props.getFilmInfo(this.props.match.params.filmId);
     }
     render() {
-        return <FilmItem filmInfo={this.props.filmInfo}/>
+        return <FilmItem filmInfo={this.props.filmInfo} />
     }
 }
 
@@ -17,4 +17,4 @@ const mapStateToProps = (state) => ({
     filmInfo: state.filmPage.filmInfo,
 })
 let withUrlContainer = withRouter(FilmItemContainer);
-export default connect(mapStateToProps, {getFilmInfo})(withUrlContainer);
+export default connect(mapStateToProps, { getFilmInfo })(withUrlContainer);

@@ -10,7 +10,6 @@
     grid-template-areas: 
     "image category category"
     "bottomcategory bottomcategory bottomcategory";
-    
     grid-template-columns: 1fr 10fr;
 }
 
@@ -20,7 +19,6 @@
 .rightWrapper {
     grid-area: category;
     padding-left: 7px;
-    
 }
 .bottomWrapper {
     grid-area: bottomcategory;
@@ -46,8 +44,31 @@
 
 .categoryName {
     font-weight:600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 .infoItem {
     margin-bottom: 3px;
+    font-size: 1.2vw;
+}
+
+@media (max-width: 830px) { 
+    .filmInf {
+        display: block;
+    }
+    .filmPoster {
+        display: block;
+        margin: 0 auto;
+    }
+    .infoItem {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 360px) { 
+    .filmPoster {
+        max-width: 60vw; 
+        max-height: 60vw;
+    }
 }

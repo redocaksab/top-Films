@@ -10,7 +10,7 @@
 .menuMain li {display: inline-block;}
 .menuMain li:after {
   content: "|";
-  color: #d8d6e0;
+  color: #e1e0eb;
   display: inline-block;
   vertical-align:top;
 }
@@ -27,7 +27,7 @@
   display: inline-block;
   transition: color .2s;
 }
-.menuMain a, .menuMain a:visited {color: #d8d6e0;}
+.menuMain a, .menuMain a:visited {color: #e1e0eb;}
 .menuMain a.current, .menuMain a:hover{color: #eb0142;}
 .menuMain a:before,
 .menuMain a:after {
@@ -42,7 +42,8 @@
   transition: .8s;
 }
 .menuMain a:hover:before, .menuMain .current:before {left: 0;}
-.menuMain a:hover:after, .menuMain .current:after {right: 0;}   
+.menuMain a:hover:after, .menuMain .current:after {right: 0;}
+
 @media (max-width: 550px) {
 .menuMain {padding-top: 0;}
 .menuMain li {display: block;}
