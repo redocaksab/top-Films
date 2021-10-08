@@ -1,6 +1,7 @@
 import axios from "axios";
 
 const SAVE_FILM_INFO = "SAVE-FILM-INFO";
+const CLEAR_FILM_INFO = "CLEAR-FILM-INFO";
 
 let initialState = {
     filmInfo: {}
@@ -12,6 +13,10 @@ const searchReducer = (state = initialState, action) => {
         case SAVE_FILM_INFO:
             return {
                 ...state, filmInfo: action.filmInfo,
+            }
+        case CLEAR_FILM_INFO:
+            return {
+                filmInfo: {}
             }
         default:
             return state;
@@ -63,5 +68,5 @@ export const getFilmInfo = (filmId) => {
 
     }
 }
-
+export const clearFilmInfo = () => ({ type: CLEAR_FILM_INFO });
 export default searchReducer;
