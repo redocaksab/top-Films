@@ -9,8 +9,8 @@ const Top20Page = (props) => {
         return (
             <div className={styles.topCategory}>
                 <NavLink to={`/films/${item.id}`} className={styles.poster}>
-                    {(isLoad) ? <img src={preloader} onLoad={() => { setIsLoad(false) }} /> :
-                        <img src={`https://image.tmdb.org/t/p/original${item.poster}`} />}
+                    {(isLoad) ? <img alt="loader" src={preloader} onLoad={() => { setIsLoad(false) }} /> :
+                        <img alt="film poster" src={`https://image.tmdb.org/t/p/original${item.poster}`} />}
                 </NavLink>
                 <div className={styles.filmName}><b>{index + 1}.</b> {item.title}</div>
             </div>
